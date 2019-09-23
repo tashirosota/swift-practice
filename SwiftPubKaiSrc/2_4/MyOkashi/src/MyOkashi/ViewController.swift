@@ -90,7 +90,7 @@ class ViewController: UIViewController,UISearchBarDelegate,UITableViewDataSource
                 // 受け取ったJSONデータをパース（解析）して格納
                 let json = try decoder.decode(ResultJson.self, from: data!)
             
-                // print(json)
+                 print(json)
                 
                 // お菓子の情報が取得できているか確認
                 if let items = json.item {
