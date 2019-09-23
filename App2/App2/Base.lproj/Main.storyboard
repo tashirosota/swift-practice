@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="App2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="これからジャンケンをします！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehV-7T-Jnm">
+                                <rect key="frame" x="0.0" y="477" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cHa-kQ-6IF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FnZ-Vi-3ey">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="477"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqp-aC-FIe">
+                                <rect key="frame" x="0.0" y="517" width="375" height="150"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="70n-DQ-wZv"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="GZY-5b-C4q"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="M38-5k-rEe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="ジャンケンをする！">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="jankenButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X0G-C1-3Ad"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eqp-aC-FIe" firstAttribute="top" secondItem="ehV-7T-Jnm" secondAttribute="bottom" id="Glv-dL-3W8"/>
+                            <constraint firstItem="FnZ-Vi-3ey" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Igu-bA-gw3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ehV-7T-Jnm" secondAttribute="trailing" id="NON-k3-fVy"/>
+                            <constraint firstItem="ehV-7T-Jnm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UOZ-VC-RZP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eqp-aC-FIe" secondAttribute="bottom" id="bkv-oB-Gjy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FnZ-Vi-3ey" secondAttribute="trailing" id="g1i-qo-a3U"/>
+                            <constraint firstItem="FnZ-Vi-3ey" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j5l-fD-sju"/>
+                            <constraint firstItem="eqp-aC-FIe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qOS-zF-WZH"/>
+                            <constraint firstItem="ehV-7T-Jnm" firstAttribute="top" secondItem="FnZ-Vi-3ey" secondAttribute="bottom" id="x5J-KT-oLe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eqp-aC-FIe" secondAttribute="trailing" id="yTa-Tn-C9b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="jankenImage" destination="FnZ-Vi-3ey" id="VED-vy-3WK"/>
+                        <outlet property="jankenLabel" destination="ehV-7T-Jnm" id="9WU-qq-rw3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
