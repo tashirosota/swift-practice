@@ -1,5 +1,4 @@
 import UIKit
 
-var str = "Hello, playground"
-let int = Int.max
-print(Int.max)
+var counts : [Int] = []
+counts += [3]
